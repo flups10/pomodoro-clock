@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <header class="container">
+                <h1>
+                    Pomodoro clock
+                </h1>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Options -->
+            <div class="col-6">
+                <p class="capitalize">Break</p>
+                <div class="timer-option">
+                    <button type="button" id='break-min'  class="btn btn-light">-</button>
+                    <span id="break-time">5</span>
+                    <button type="button" id="break-plus" class="btn btn-light">+</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <p class="capitalize">Work</p>
+                <div class="timer-option">
+
+                    <button type="button" id="work-min" class="btn btn-light">-</button>
+                    <span id="work-time">25</span>
+                    <button type="button" id="work-plus" class="btn btn-light">+</button>
+                </div>
+            </div>
+            <!-- Clock -->
+            <div class="col-12 allign">
+                <div class="timer">
+                    <h1 id="start">Start</h1>
+                    <span id="timer-min">25</span> : <span id="timer-sec">00</span>
+                    <h2 id="stop"></h2>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="button" id="reset" class="btn btn-warning">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
